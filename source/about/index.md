@@ -17,7 +17,7 @@ TODO
 ----
 
 *   上班
-*   [Sophia](https://gitee.com/LiChenLiang/Sophia "Sophia") 已经1年都没动过了
+*   [Sophia](https://gitee.com/LiChenLiang/Sophia "Sophia") （18年3月后就没动过）
 
 个人简介
 ----
