@@ -21,7 +21,7 @@ java.lang.IllegalArgumentException: An invalid character [xx] was present in the
  ...
 ```
 
-# Tomcat 8.x（ or later）版本中 Cookie 处理的变化
+# 规范变化
 
 Tomcat 8.x（ or later）版本进了很多改进，其中的 Cookie 处理也升级到 RFC6265 规范，这可能导致在 Tomcat 8 以前版本中运行无问题的Web项目在 Tomcat 8 中报下面错误：
 
@@ -31,7 +31,7 @@ Tomcat 8.x（ or later）版本进了很多改进，其中的 Cookie 处理也�
 
 那么下面就来看看到底哪些字符时不可用的。
 
-# Tomcat Rfc6265CookieProcessor.validateCookieValue 源码
+# 查看源码
 
 ``` java 
 private void validateCookieValue(String value) {
