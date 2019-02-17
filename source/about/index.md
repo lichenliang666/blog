@@ -53,3 +53,4 @@ TODO
 *   2019-02-15 将 WordPress 中的内容折腾到 Hexo (在 WrodPress 中导出文件，再用 Hexo 的 hexo-migrator-wordpress 插件导入到 Hexo )
 *   2019-02-16 将 WordPress 的站域名从 www.lichenliang.top 改为 blog.lichenliang.top
 *   2019-02-16 www.lichenliang.top 解析到 github 的 pages 服务上
+*   2019-02-17 增加 Valine 评论系统 
