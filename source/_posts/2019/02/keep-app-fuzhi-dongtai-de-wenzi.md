@@ -1,5 +1,5 @@
 ---
-title: 在 Keep 动态中复制文字
+title: 在 Keep 的动态中复制文字
 date: 2019-02-18 21:12:18
 tags: KeepApp
 categories:
