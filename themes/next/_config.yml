@@ -96,8 +96,8 @@ menu:
   categories: /categories/ || th
   tags: /tags/ || tags 
   archives: /archives/ || archive
-  about: /about
-  留言: /message
+  about: /about || user
+  留言: /message || envelope
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
