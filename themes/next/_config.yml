@@ -97,6 +97,7 @@ menu:
   tags: /tags/ || tags 
   archives: /archives/ || archive
   about: /about
+  留言: /message
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -116,7 +117,6 @@ scheme: Gemini
 #scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
-
 
 # ---------------------------------------------------------------
 # Sidebar Settings
