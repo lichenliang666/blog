@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -74,22 +74,24 @@
 
 
 
+  <link rel="alternate" href="/atom.xml" title="李晨亮的博客" type="application/atom+xml">
 
 
 
 
 
-<meta name="description" content="这个记录着我的工作经历、读书心得、开源项目、原创的技术资料">
-<meta name="keywords" content="李晨亮, 博客, Java, EA, UML">
+
+<meta name="description" content="这里记录着我的原创技术文章、读书心得、学习经历、开源项目、工作经历">
+<meta name="keywords" content="李晨亮, 博客, Java, 前端, Vue, EA, UML">
 <meta property="og:type" content="website">
 <meta property="og:title" content="李晨亮的博客">
 <meta property="og:url" content="http://www.lichenliang.top/page/2/index.html">
 <meta property="og:site_name" content="李晨亮的博客">
-<meta property="og:description" content="这个记录着我的工作经历、读书心得、开源项目、原创的技术资料">
+<meta property="og:description" content="这里记录着我的原创技术文章、读书心得、学习经历、开源项目、工作经历">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="李晨亮的博客">
-<meta name="twitter:description" content="这个记录着我的工作经历、读书心得、开源项目、原创的技术资料">
+<meta name="twitter:description" content="这里记录着我的原创技术文章、读书心得、学习经历、开源项目、工作经历">
 
 
 
@@ -97,7 +99,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Gemini',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -132,6 +134,16 @@
 
 
 
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?db21968d125ed1a9963edc7810c3b816";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
 
 
 
@@ -161,7 +173,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">记录着技术路上的宝贵内容</p>
+        <p class="site-subtitle">IT技术男，恋技术，爱运动</p>
       
   </div>
 
@@ -191,16 +203,6 @@
         </li>
       
         
-        <li class="menu-item menu-item-tags">
-          <a href="/tags/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
-            
-            标签
-          </a>
-        </li>
-      
-        
         <li class="menu-item menu-item-categories">
           <a href="/categories/" rel="section">
             
@@ -211,12 +213,42 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-留言">
+          <a href="/message" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-envelope"></i> <br>
+            
+            留言
           </a>
         </li>
       
@@ -239,6 +271,572 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.lichenliang.top/e5-b0-8f-e7-a8-8b-e5-ba-8f-e5-9c-b0-e7-90-86-e4-bd-8d-e7-bd-ae-e9-80-86-e8-a7-a3-e6-9e-90.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李晨亮">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李晨亮的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/e5-b0-8f-e7-a8-8b-e5-ba-8f-e5-9c-b0-e7-90-86-e4-bd-8d-e7-bd-ae-e9-80-86-e8-a7-a3-e6-9e-90.html" itemprop="url">小程序地理位置逆解析</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-11T08:58:54+08:00">
+                2018-02-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/e5-b0-8f-e7-a8-8b-e5-ba-8f-e5-9c-b0-e7-90-86-e4-bd-8d-e7-bd-ae-e9-80-86-e8-a7-a3-e6-9e-90.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/e5-b0-8f-e7-a8-8b-e5-ba-8f-e5-9c-b0-e7-90-86-e4-bd-8d-e7-bd-ae-e9-80-86-e8-a7-a3-e6-9e-90.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/e5-b0-8f-e7-a8-8b-e5-ba-8f-e5-9c-b0-e7-90-86-e4-bd-8d-e7-bd-ae-e9-80-86-e8-a7-a3-e6-9e-90.html" class="leancloud_visitors" data-flag-title="小程序地理位置逆解析">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>微信小程序现在火得简直不要不要的，会写小程序简直成了IT人必备的技能。 下面就简单介绍下，在微信位置API中不提供的位置逆解析实现。 这里我用的是百度地图API，并且有为小程序连身打造的JavaScript API 使用起来真的是相当方便。 只需要在百度注册个账号，并登录到<a href="http://lbsyun.baidu.com/" target="_blank" rel="noopener">百度地图开发平台</a>，在页面上部的导航条点击控制台，进到控制台后创建个应用。 下载JS SDK，不知道怎么用的话，再下载小程序Demo项目。看看代码很容易就知道怎么用了。 demo地址:<a href="https://github.com/baidumapapi/wxapp-jsapi" target="_blank" rel="noopener">https://github.com/baidumapapi/wxapp-jsapi</a> 注意：如果要进行文字上的区域比对，请注意省市区不同数据来源，二三级市区县的叫法略有差别。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.lichenliang.top/qianduan-houtai-jiemian-kuangjia.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李晨亮">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李晨亮的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/qianduan-houtai-jiemian-kuangjia.html" itemprop="url">中后台前端框架解决方案</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-10T22:51:59+08:00">
+                2018-02-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/qianduan-houtai-jiemian-kuangjia.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/qianduan-houtai-jiemian-kuangjia.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/qianduan-houtai-jiemian-kuangjia.html" class="leancloud_visitors" data-flag-title="中后台前端框架解决方案">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在做的大多数项目中，无疑都需要个后台或是中台。界面这是一大块的工作，下面就收集了几个比较好看的，至于是不是容易上手、是不是好用，对各种浏览器及版本兼容性怎么样，我没都用过，用过的在下面评论吧。</p>
+<h2 id="Bootstrap-系"><a href="#Bootstrap-系" class="headerlink" title="Bootstrap 系"></a>Bootstrap 系</h2><p>下面都是用基于 Bootstrap 的，有 Bootstrap 经验的学习曲线应该不会太陡峭。</p>
+<h2 id="AdminLTE"><a href="#AdminLTE" class="headerlink" title="AdminLTE"></a>AdminLTE</h2><p>一个老外开发的框架，由很多js组件组成，要想用的游刃有余，要会的东西还得真不少。 <a href="https://adminlte.io/" target="_blank" rel="noopener">官方网站</a></p>
+<h2 id="FastAdmin"><a href="#FastAdmin" class="headerlink" title="FastAdmin"></a>FastAdmin</h2><p>基于ThinkPHP5和Bootstrap的极速后台开发框架。 有个纯静态的版本，可以与任何后台技术配合，并不依赖于ThinkPHP5。</p>
+<h2 id="前后端分离系"><a href="#前后端分离系" class="headerlink" title="前后端分离系"></a>前后端分离系</h2><p>下面是基于 Vue、React、Angular 三大主流前后端分离框架的实现。</p>
+<h2 id="Vue-系列"><a href="#Vue-系列" class="headerlink" title="Vue 系列"></a>Vue 系列</h2><h2 id="iView-admin"><a href="#iView-admin" class="headerlink" title="iView admin"></a>iView admin</h2><p><a href="https://github.com/iview/iview-admin" target="_blank" rel="noopener">官方网站</a> | <a href="https://iview.github.io/iview-admin" target="_blank" rel="noopener">在线演示</a> | <a href="https://github.com/iview/iview-admin#效果展示" target="_blank" rel="noopener">效果展示</a> iView admin是基于Vue.js，搭配使用iView UI组件库形成的一套后台集成解决方案，由TalkingData前端可视化团队部分成员开发维护。iView admin遵守iView设计和开发约定，风格统一，设计考究，并且更多功能在不停开发中。 GOTO:<a href="https://www.iviewui.com" target="_blank" rel="noopener">iView UI 组件库</a></p>
+<h2 id="React-系列"><a href="#React-系列" class="headerlink" title="React 系列"></a>React 系列</h2><h2 id="ANT-DESIGN-PRO"><a href="#ANT-DESIGN-PRO" class="headerlink" title="ANT DESIGN PRO"></a>ANT DESIGN PRO</h2><p><img src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" alt="Ant Design Pro Logo"><img src="https://gw.alipayobjects.com/zos/rmsportal/tNoOLUAkyuGLXoZvaibF.svg" alt> 由蚂蚁金服团队提供，开箱即用的中台前端/设计解决方案。 <a href="https://pro.ant.design/index-cn" target="_blank" rel="noopener">官方网站</a> | <a href="https://preview.pro.ant.design" target="_blank" rel="noopener">在线演示</a></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.lichenliang.top/flyway-e5-b7-a5-e4-bd-9c-e5-8e-9f-e7-90-86.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李晨亮">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李晨亮的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/flyway-e5-b7-a5-e4-bd-9c-e5-8e-9f-e7-90-86.html" itemprop="url">Flyway 工作原理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-08T13:01:55+08:00">
+                2018-02-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数据库/" itemprop="url" rel="index">
+                    <span itemprop="name">数据库</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/flyway-e5-b7-a5-e4-bd-9c-e5-8e-9f-e7-90-86.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/flyway-e5-b7-a5-e4-bd-9c-e5-8e-9f-e7-90-86.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/flyway-e5-b7-a5-e4-bd-9c-e5-8e-9f-e7-90-86.html" class="leancloud_visitors" data-flag-title="Flyway 工作原理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p><a href="https://flywaydb.org/getstarted/how" target="_blank" rel="noopener">官方原文</a> 下面都是官方的图，记录下自己的理解。 最简单的方式是让 Flyway  连接到一个空的数据库。 <img src="https://flywaydb.org/assets/balsamiq/EmptyDb.png" alt> Flyway 会尝试找到历史表。由于数据库是空的, Flyway 不会找到，这时就会创建一个。 现在, 您的数据库中有一个名为 flyway_schema_history 的空表, 默认情况下为: <img src="https://flywaydb.org/assets/balsamiq/EmptySchemaVersion.png" alt>   这个表用来跟踪数据库的变化。 之后Flyway立即将开始扫描应用程序的文件系统或类路径以进行迁移。 它们可以用Sql或Java编写。 然后，迁移将根据其版本号进行排序并按顺序应用： <img src="https://flywaydb.org/assets/balsamiq/Migration-1-2.png" alt> 在应用每个迁移时，模式历史记录表会相应更新： flyway_schema_history  </p>
+<p>installed_rank</p>
+<p>version</p>
+<p>description</p>
+<p>type</p>
+<p>script</p>
+<p>checksum</p>
+<p>installed_by</p>
+<p>installed_on</p>
+<p>execution_time</p>
+<p>success</p>
+<p>1</p>
+<p>1</p>
+<p>Initial Setup</p>
+<p>SQL</p>
+<p>V1__Initial_Setup.sql</p>
+<p>1996767037</p>
+<p>axel</p>
+<p>2016-02-04 22:23:00.0</p>
+<p>546</p>
+<p>true</p>
+<p>2</p>
+<p>2</p>
+<p>First Changes</p>
+<p>SQL</p>
+<p>V2__First_Changes.sql</p>
+<p>1279644856</p>
+<p>axel</p>
+<p>2016-02-06 09:18:00.0</p>
+<p>127</p>
+<p>true</p>
+<p>随着元数据和初始状态的到位，我们现在可以谈论迁移到更新的版本。 Flyway将再次扫描应用程序的文件系统或类路径以进行迁移。 将根据模式历史记录表检查迁移。 如果其版本号低于或等于标记为当前版本的版本号，则会被忽略。 剩余的迁移是待定迁移：可用，但不适用。 <img src="https://flywaydb.org/assets/balsamiq/PendingMigration.png" alt> 然后按版本号排序并按顺序执行： <img src="https://flywaydb.org/assets/balsamiq/Migration21.png" alt>   模式历史记录表相应地更新： flyway_schema_history</p>
+<p>installed_rank</p>
+<p>version</p>
+<p>description</p>
+<p>type</p>
+<p>script</p>
+<p>checksum</p>
+<p>installed_by</p>
+<p>installed_on</p>
+<p>execution_time</p>
+<p>success</p>
+<p>1</p>
+<p>1</p>
+<p>Initial Setup</p>
+<p>SQL</p>
+<p>V1__Initial_Setup.sql</p>
+<p>1996767037</p>
+<p>axel</p>
+<p>2016-02-04 22:23:00.0</p>
+<p>546</p>
+<p>true</p>
+<p>2</p>
+<p>2</p>
+<p>First Changes</p>
+<p>SQL</p>
+<p>V2__First_Changes.sql</p>
+<p>1279644856</p>
+<p>axel</p>
+<p>2016-02-06 09:18:00.0</p>
+<p>127</p>
+<p>true</p>
+<p>3</p>
+<p>2.1</p>
+<p>Refactoring</p>
+<p>JDBC</p>
+<p>V2_1__Refactoring</p>
+<p>axel</p>
+<p>2016-02-10 17:45:05.4</p>
+<p>251</p>
+<p>true</p>
+<p>就是这样！每当需要发展数据库时，无论是结构（DDL）还是参考数据（DML），都只需创建一个版本号高于当前版本的新版本。 Flyway下一次启动时，会找到它并相应地升级数据库。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -319,6 +917,16 @@
           
 
           
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/zai-xian-gong-ju.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/zai-xian-gong-ju.html" itemprop="commentCount"></span>
+                </a>
+              </span>
             
           
 
@@ -493,6 +1101,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/git-e5-8f-8c-e8-bf-9c-e7-a8-8b-e5-ba-93-e7-9a-84-e9-85-8d-e7-bd-ae.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/git-e5-8f-8c-e8-bf-9c-e7-a8-8b-e5-ba-93-e7-9a-84-e9-85-8d-e7-bd-ae.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -623,7 +1241,7 @@
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
               <p class="site-author-name" itemprop="name">李晨亮</p>
-              <p class="site-description motion-element" itemprop="description">这个记录着我的工作经历、读书心得、开源项目、原创的技术资料</p>
+              <p class="site-description motion-element" itemprop="description">这里记录着我的原创技术文章、读书心得、学习经历、开源项目、工作经历</p>
           </div>
 
           <nav class="site-state motion-element">
@@ -633,7 +1251,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">12</span>
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -643,10 +1261,10 @@
               
               
               <div class="site-state-item site-state-categories">
-                
-                  <span class="site-state-item-count">11</span>
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">15</span>
                   <span class="site-state-item-name">分类</span>
-                
+                </a>
               </div>
             
 
@@ -654,17 +1272,34 @@
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">13</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">17</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
           </nav>
 
           
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
 
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/lichenliang666" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
           
 
           
@@ -710,7 +1345,7 @@
 
 
 
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
 
 
 
@@ -810,6 +1445,13 @@
   
   
 
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
   
 
   
@@ -849,6 +1491,28 @@
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: true,
+        notify: false,
+        appId: 'n6wTermpHd2s909Rdyfg1Hnf-gzGzoHsz',
+        appKey: 'GDjW1Y01XHyCRQLWO4BRQh4E',
+        placeholder: 'Just go go',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
@@ -980,5 +1644,39 @@
 
   
 
+
+
+<!-- 百度URL自动推送脚本 -->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 </body>
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 </html>
