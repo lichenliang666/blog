@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="背景最近在个项目里使用了人人开源项目 renren-fast | Java 快速开发平台。 为了让项目的模块代码和 renren-fast 中的模块代码能清晰 为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。 熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @S">
+<meta name="description" content="背景最近在个项目里使用了人人开源项目 renren-fast | Java 快速开发平台。 为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。 熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @SpringBootApplication 这个类所在包下的类和子包。">
 <meta name="keywords" content="SpringBoot,MyBatis">
 <meta property="og:type" content="article">
 <meta property="og:title" content="为 Spring Boot 增加启动类包外的 Bean、Mapper 路径">
 <meta property="og:url" content="http://www.lichenliang.top/spring-boot-zengjia-mapper-bean-lujing.html">
 <meta property="og:site_name" content="李晨亮的博客">
-<meta property="og:description" content="背景最近在个项目里使用了人人开源项目 renren-fast | Java 快速开发平台。 为了让项目的模块代码和 renren-fast 中的模块代码能清晰 为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。 熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @S">
+<meta property="og:description" content="背景最近在个项目里使用了人人开源项目 renren-fast | Java 快速开发平台。 为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。 熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @SpringBootApplication 这个类所在包下的类和子包。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-02-21T08:18:31.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="为 Spring Boot 增加启动类包外的 Bean、Mapper 路径">
-<meta name="twitter:description" content="背景最近在个项目里使用了人人开源项目 renren-fast | Java 快速开发平台。 为了让项目的模块代码和 renren-fast 中的模块代码能清晰 为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。 熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @S">
+<meta name="twitter:description" content="背景最近在个项目里使用了人人开源项目 renren-fast | Java 快速开发平台。 为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。 熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @SpringBootApplication 这个类所在包下的类和子包。">
 
 
 
@@ -396,7 +396,6 @@
 
       
         <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>最近在个项目里使用了人人开源项目 <a href="https://www.renren.io/community/project" title="renren-fast" target="_blank" rel="noopener">renren-fast</a> | Java 快速开发平台。</p>
-<p>为了让项目的模块代码和 renren-fast 中的模块代码能清晰</p>
 <p>为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。</p>
 <p>熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @SpringBootApplication 这个类所在包下的类和子包。</p>
 <h1 id="配置方式"><a href="#配置方式" class="headerlink" title="配置方式"></a>配置方式</h1><p>除了需要为 Spring Boot 配置要扫描的包外，还需要为 MyBatis 手动配置 Mapper 的路径。</p>
