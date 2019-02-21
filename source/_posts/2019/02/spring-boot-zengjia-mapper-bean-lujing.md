@@ -1,7 +1,7 @@
 ---
 title: 为 Spring Boot 增加启动类包外的 Bean、Mapper 路径
-date: 2019-02-08 16:18:31
-updated: 2019-02-08 16:18:31
+date: 2019-02-21 16:18:31
+updated: 2019-02-21 16:18:31
 categories:
   - 后端
 tags:
@@ -13,8 +13,6 @@ permalink: spring-boot-zengjia-mapper-bean-lujing
 # 背景
 
 最近在个项目里使用了人人开源项目 [renren-fast](https://www.renren.io/community/project "renren-fast") | Java 快速开发平台。
-
-为了让项目的模块代码和 renren-fast 中的模块代码能清晰
 
 为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。
 
