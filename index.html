@@ -285,6 +285,178 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.lichenliang.top/spring-boot-zengjia-mapper-bean-lujing.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李晨亮">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李晨亮的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/spring-boot-zengjia-mapper-bean-lujing.html" itemprop="url">为 Spring Boot 增加启动类包外的 Bean、Mapper 路径</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-21T16:18:31+08:00">
+                2019-02-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/后端/" itemprop="url" rel="index">
+                    <span itemprop="name">后端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/spring-boot-zengjia-mapper-bean-lujing.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/spring-boot-zengjia-mapper-bean-lujing.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/spring-boot-zengjia-mapper-bean-lujing.html" class="leancloud_visitors" data-flag-title="为 Spring Boot 增加启动类包外的 Bean、Mapper 路径">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>最近在个项目里使用了人人开源项目 <a href="https://www.renren.io/community/project" title="renren-fast" target="_blank" rel="noopener">renren-fast</a> | Java 快速开发平台。</p>
+<p>为了让项目的模块代码和 renren-fast 中的模块代码能清晰</p>
+<p>为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。</p>
+<p>熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @SpringBootApplication 这个类所在包下的类和子包。</p>
+<h1 id="配置方式"><a href="#配置方式" class="headerlink" title="配置方式"></a>配置方式</h1><p>除了需要为 Spring Boot 配置要扫描的包外，还需要为 MyBatis 手动配置 Mapper 的路径。</p>
+<p>下面就是配置就是如何才能增加另外的项目包。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span>(exclude=&#123;DataSourceAutoConfiguration.class&#125; , scanBasePackages=&#123;<span class="string">"io.renren"</span>,<span class="string">"top.lichenliang.santa"</span>&#125;)</span><br><span class="line"><span class="meta">@MapperScan</span>(&#123;<span class="string">"io.renren.**.dao"</span> , <span class="string">"top.lichenliang.santa.**.dao"</span>&#125;)</span><br><span class="line"><span class="meta">@Import</span>(&#123;DynamicDataSourceConfig.class&#125;)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RenrenApplication</span> <span class="keyword">extends</span> <span class="title">SpringBootServletInitializer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		SpringApplication.run(RenrenApplication.class, args);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> SpringApplicationBuilder <span class="title">configure</span><span class="params">(SpringApplicationBuilder application)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> application.sources(RenrenApplication.class);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>此代码由阿伟提供 :)</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.lichenliang.top/keep-app-fuzhi-dongtai-de-wenzi.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -732,178 +904,6 @@
 </blockquote>
 <p>如果你也遇到这个问题，请依次检查B包下的已经被 <code>Check Out</code> 出来的包（没有🔒图标的包），把找到的包 <code>Check In</code> 之后就可以删除 B 包了。也可以直接把 B 包 <code>Check In Branch...</code> 后，再删除 B 包。</p>
 <p>比较标准的说法就是：要删除已经被版本控制的包时，此包与此包下的子包都不能是 <code>Check Out</code> 的状态。</p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://www.lichenliang.top/spring-boot-zengjia-mapper-bean-lujing.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="李晨亮">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="李晨亮的博客">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/spring-boot-zengjia-mapper-bean-lujing.html" itemprop="url">为 Spring Boot 增加启动类包外的 Bean、Mapper 路径</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-08T16:18:31+08:00">
-                2019-02-08
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/后端/" itemprop="url" rel="index">
-                    <span itemprop="name">后端</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/spring-boot-zengjia-mapper-bean-lujing.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/spring-boot-zengjia-mapper-bean-lujing.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-             <span id="/spring-boot-zengjia-mapper-bean-lujing.html" class="leancloud_visitors" data-flag-title="为 Spring Boot 增加启动类包外的 Bean、Mapper 路径">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数&#58;</span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>最近在个项目里使用了人人开源项目 <a href="https://www.renren.io/community/project" title="renren-fast" target="_blank" rel="noopener">renren-fast</a> | Java 快速开发平台。</p>
-<p>为了让项目的模块代码和 renren-fast 中的模块代码能清晰</p>
-<p>为了让项目的包结构清晰整洁、代码维护容易，就创建了 top.lichenliang.santa 这个包，项目中的所有模块的实现都放到这个包中。</p>
-<p>熟悉 Spring Boot 的都知道，Spring Boot 项目启动时默认只扫描有注释 @SpringBootApplication 这个类所在包下的类和子包。</p>
-<h1 id="配置方式"><a href="#配置方式" class="headerlink" title="配置方式"></a>配置方式</h1><p>除了需要为 Spring Boot 配置要扫描的包外，还需要为 MyBatis 手动配置 Mapper 的路径。</p>
-<p>下面就是配置就是如何才能增加另外的项目包。</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span>(exclude=&#123;DataSourceAutoConfiguration.class&#125; , scanBasePackages=&#123;<span class="string">"io.renren"</span>,<span class="string">"top.lichenliang.santa"</span>&#125;)</span><br><span class="line"><span class="meta">@MapperScan</span>(&#123;<span class="string">"io.renren.**.dao"</span> , <span class="string">"top.lichenliang.santa.**.dao"</span>&#125;)</span><br><span class="line"><span class="meta">@Import</span>(&#123;DynamicDataSourceConfig.class&#125;)</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RenrenApplication</span> <span class="keyword">extends</span> <span class="title">SpringBootServletInitializer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">		SpringApplication.run(RenrenApplication.class, args);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	<span class="meta">@Override</span></span><br><span class="line">	<span class="function"><span class="keyword">protected</span> SpringApplicationBuilder <span class="title">configure</span><span class="params">(SpringApplicationBuilder application)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> application.sources(RenrenApplication.class);</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p>此代码由阿伟提供 :)</p>
-</blockquote>
 
           
         
