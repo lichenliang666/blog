@@ -77,7 +77,7 @@
     <link href="http://www.lichenliang.top/visio-block-diagram-in-enterprise-architect.html"/>
     <id>http://www.lichenliang.top/visio-block-diagram-in-enterprise-architect.html</id>
     <published>2019-02-07T16:00:00.000Z</published>
-    <updated>2019-02-12T05:34:58.655Z</updated>
+    <updated>2019-02-21T08:44:59.235Z</updated>
     
     <content type="html"><![CDATA[<p>有的时候我们想画画框图用 Visio 是很方便的。可在 Enterprise Architect（后面简称为 EA ）中用什么图画框图比较好呢。有的说用对象图、流程图都可以。我看了下后感觉里面的图形元素和 Visio 框图中的形状还是差了不少。</p><p>我就不信 EA 里面连方块、三角、圆都没有！有严重强迫症的我几乎把 EA 中所有的图都看了一遍，终于找个比较接近 Visio 基本框中图形状的图。那就是白板图！！！</p><h1 id="创建白板图"><a href="#创建白板图" class="headerlink" title="创建白板图"></a>创建白板图</h1><ol><li>打开 New Diagram 窗口（注意：不能在 Root Note 下创建图，需要选择个包后才能创建图）</li></ol><p><img src="./visio-block-diagram-in-enterprise-architect/create-a-whiteboard-diagram-00.png" alt></p><ol start="2"><li>在 New Diagram 窗口中找到白板图</li></ol><p><img src="./visio-block-diagram-in-enterprise-architect/create-a-whiteboard-diagram-01.png" alt></p><ol start="3"><li>选择白板图或手绘图（随便选什么都行，在图属性中可以随意切换）</li></ol><p><img src="./visio-block-diagram-in-enterprise-architect/create-a-whiteboard-diagram-02.png" alt></p><h1 id="白板图属性"><a href="#白板图属性" class="headerlink" title="白板图属性"></a>白板图属性</h1><p>白板图除了基本的图属性为，还有两个特殊的属性，分别是“手绘”和“白板”</p><ul><li>手绘：勾选后图中的元素线条会呈现出手绘的效果。</li><li>白板：勾选后图的背景变为白色，并且图中所有形状的填充色都将显示为白色。</li></ul><p><img src="./visio-block-diagram-in-enterprise-architect/ea-whiteboard-diagram-properties.png" alt="EA 白板图属性面板"></p><h1 id="图元素"><a href="#图元素" class="headerlink" title="图元素"></a>图元素</h1><h2 id="工具盒（Toolbox）"><a href="#工具盒（Toolbox）" class="headerlink" title="工具盒（Toolbox）"></a>工具盒（Toolbox）</h2><p><img src="./visio-block-diagram-in-enterprise-architect/ea-whiteboard-diagram-toolbox.png" alt="EA 白板图的形状、箭头、连线"></p><h2 id="形状（Shapes）"><a href="#形状（Shapes）" class="headerlink" title="形状（Shapes）"></a>形状（Shapes）</h2><p><img src="./visio-block-diagram-in-enterprise-architect/ea-whiteboard-diagram-shapes-sample.png" alt="EA 白板图形状示例"></p><p>注意到上图中有个与众不同的形状了吗？</p><p>那个就是图中的 Oval1 ，这个形状有两个不同之处：</p><ol><li>显示出了形状的名称；</li><li>不是透明的，有填充色。</li></ol><p>在白板图中的形状（Shapes）和箭头（Arrows）有两个通用的属性 fill 和 nameVisible ，分别用来控制是否填充和元素名称的显示，默认都为 false，如下图：</p><p><img src="./visio-block-diagram-in-enterprise-architect/ea-whiteboard-diagram-element-properties.png" alt="EA 白板图形状属性"></p><blockquote><p>注：上面的这两个属性不包括形状中的 Callout 和 Text Element</p></blockquote><h2 id="Thin-Arrows-amp-Lines"><a href="#Thin-Arrows-amp-Lines" class="headerlink" title="Thin Arrows &amp; Lines"></a>Thin Arrows &amp; Lines</h2><p>由于 Thin Arrows 和 Lines 元素都比较简单，这里就不在讲述了，自己去探索吧。</p>]]></content>
     
@@ -253,18 +253,20 @@
   
   <entry>
     <title>小程序地理位置逆解析</title>
-    <link href="http://www.lichenliang.top/e5-b0-8f-e7-a8-8b-e5-ba-8f-e5-9c-b0-e7-90-86-e4-bd-8d-e7-bd-ae-e9-80-86-e8-a7-a3-e6-9e-90.html"/>
-    <id>http://www.lichenliang.top/e5-b0-8f-e7-a8-8b-e5-ba-8f-e5-9c-b0-e7-90-86-e4-bd-8d-e7-bd-ae-e9-80-86-e8-a7-a3-e6-9e-90.html</id>
+    <link href="http://www.lichenliang.top/xiaochengxu-dili-weizhi-ni-jiexi.html"/>
+    <id>http://www.lichenliang.top/xiaochengxu-dili-weizhi-ni-jiexi.html</id>
     <published>2018-02-11T00:58:54.000Z</published>
-    <updated>2019-02-15T03:44:43.015Z</updated>
+    <updated>2019-02-21T08:50:06.239Z</updated>
     
-    <content type="html"><![CDATA[<p>微信小程序现在火得简直不要不要的，会写小程序简直成了IT人必备的技能。 下面就简单介绍下，在微信位置API中不提供的位置逆解析实现。 这里我用的是百度地图API，并且有为小程序连身打造的JavaScript API 使用起来真的是相当方便。 只需要在百度注册个账号，并登录到<a href="http://lbsyun.baidu.com/" target="_blank" rel="noopener">百度地图开发平台</a>，在页面上部的导航条点击控制台，进到控制台后创建个应用。 下载JS SDK，不知道怎么用的话，再下载小程序Demo项目。看看代码很容易就知道怎么用了。 demo地址:<a href="https://github.com/baidumapapi/wxapp-jsapi" target="_blank" rel="noopener">https://github.com/baidumapapi/wxapp-jsapi</a> 注意：如果要进行文字上的区域比对，请注意省市区不同数据来源，二三级市区县的叫法略有差别。</p>]]></content>
+    <content type="html"><![CDATA[<p>微信小程序现在火得简直不要不要的，会写小程序简直成了IT人必备的技能。</p><p>下面就简单介绍下，在微信位置API中不提供的位置逆解析实现。 这里我用的是百度地图 API，并且有为小程序连身打造的 JavaScript API 使用起来真的是相当方便。</p><p>只需要在百度注册个账号，并登录到<a href="http://lbsyun.baidu.com/" target="_blank" rel="noopener">百度地图开发平台</a>，在页面上部的导航条点击控制台，进到控制台后创建个应用。</p><p>下载JS SDK，不知道怎么用的话，再下载小程序 Demo 项目。看看代码很容易就知道怎么用了。</p><p>demo 地址:<a href="https://github.com/baidumapapi/wxapp-jsapi" target="_blank" rel="noopener">https://github.com/baidumapapi/wxapp-jsapi</a> 注意：如果要进行文字上的区域比对，请注意省市区不同数据来源，二三级市区县的叫法略有差别。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;微信小程序现在火得简直不要不要的，会写小程序简直成了IT人必备的技能。 下面就简单介绍下，在微信位置API中不提供的位置逆解析实现。 这里我用的是百度地图API，并且有为小程序连身打造的JavaScript API 使用起来真的是相当方便。 只需要在百度注册个账号，并登录到
+        &lt;p&gt;微信小程序现在火得简直不要不要的，会写小程序简直成了IT人必备的技能。&lt;/p&gt;
+&lt;p&gt;下面就简单介绍下，在微信位置API中不提供的位置逆解析实现。 这里我用的是百度地图 API，并且有为小程序连身打造的 JavaScript API 使用起来真的是相当方便。&lt;/p&gt;
+&lt;p&gt;
       
     
     </summary>
@@ -335,9 +337,9 @@
     <link href="http://www.lichenliang.top/zai-xian-gong-ju.html"/>
     <id>http://www.lichenliang.top/zai-xian-gong-ju.html</id>
     <published>2018-02-03T14:02:37.000Z</published>
-    <updated>2019-02-15T03:44:43.017Z</updated>
+    <updated>2019-02-21T08:35:09.405Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="软件激活-这东西也在线，我服了！"><a href="#软件激活-这东西也在线，我服了！" class="headerlink" title="软件激活[这东西也在线，我服了！]"></a>软件激活[这东西也在线，我服了！]</h2><ul><li><a href="https://www.vtrois.com/tools-kms.html" title="KMS 在线激活服务" target="_blank" rel="noopener">KMS 在线激活服务</a></li><li><a href="https://www.vtrois.com/tools-editplus.html" title="EditPlus 在线授权服务" target="_blank" rel="noopener">EditPlus 在线授权服务</a></li></ul><h2 id="编码、解码、转换"><a href="#编码、解码、转换" class="headerlink" title="编码、解码、转换"></a>编码、解码、转换</h2><ul><li><a href="https://www.vtrois.com/tools-imgbase64.html" title="图片在线转换 Base64" target="_blank" rel="noopener">图片在线转换 Base64</a></li></ul><h2 id="在线绘图"><a href="#在线绘图" class="headerlink" title="在线绘图"></a>在线绘图</h2><ul><li>【有个类似 Visio 的在线画图工具，在个开源项目文档里发现的，不过现在找不到了，等找到了再放进来】</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="软件激活-这东西也在线，我服了！"><a href="#软件激活-这东西也在线，我服了！" class="headerlink" title="软件激活[这东西也在线，我服了！]"></a>软件激活[这东西也在线，我服了！]</h2><ul><li><a href="https://www.vtrois.com/tools-kms.html" title="KMS 在线激活服务" target="_blank" rel="noopener">KMS 在线激活服务</a></li><li><a href="https://www.vtrois.com/tools-editplus.html" title="EditPlus 在线授权服务" target="_blank" rel="noopener">EditPlus 在线授权服务</a></li></ul><h2 id="编码、解码、转换"><a href="#编码、解码、转换" class="headerlink" title="编码、解码、转换"></a>编码、解码、转换</h2><ul><li><a href="https://www.vtrois.com/tools-imgbase64.html" title="图片在线转换 Base64" target="_blank" rel="noopener">图片在线转换 Base64</a></li></ul><h2 id="在线绘图"><a href="#在线绘图" class="headerlink" title="在线绘图"></a>在线绘图</h2><ul><li><a href="https://www.processon.com/" title="ProcessOn 支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等" target="_blank" rel="noopener">ProcessOn 免费在线作图，实时协作</a></li></ul>]]></content>
     
     <summary type="html">
     
