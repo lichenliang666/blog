@@ -285,6 +285,179 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.lichenliang.top/xiaochengxu-mubanxiaoxi-formid-the-formid-is-a-mock-one.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="李晨亮">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="李晨亮的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/xiaochengxu-mubanxiaoxi-formid-the-formid-is-a-mock-one.html" itemprop="url">小程序 模板消息 表单 formId 为 the formId is a mock one</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-12T17:04:05+08:00">
+                2018-02-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/前端/" itemprop="url" rel="index">
+                    <span itemprop="name">前端</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/xiaochengxu-mubanxiaoxi-formid-the-formid-is-a-mock-one.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/xiaochengxu-mubanxiaoxi-formid-the-formid-is-a-mock-one.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/xiaochengxu-mubanxiaoxi-formid-the-formid-is-a-mock-one.html" class="leancloud_visitors" data-flag-title="小程序 模板消息 表单 formId 为 the formId is a mock one">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>微信小程序使用模板消息需要使用支付prepay_id或表单提交formId， 要获得 formId 需要在 form 标签中声明属性 <code>report-submit=&quot;true&quot;</code> .wxml 代码如下：</p>
+<form report-submit="true" bindsubmit="formSubmit" bindreset="formReset"><br>  <label>姓名</label><br>  <input maxlength="30" name="name"><br>  <button formtype="submit" type="primary">提交表单</button><br></form>
+
+<p>.js 代码如下：</p>
+<p>formSubmit: function (e) {<br>  // 获取表单id<br>  formId = e.detail.formId;<br>  // 非真机运行时 formId 应该为 the formId is a mock one<br>  console.log(‘表单id:’, formId );<br>}</p>
+<p>在微信开发者工具中运行获取的 formId 为 the formId is a mock one ，要获得真实有效的 formId 需要在真机上运行。</p>
+<h2 id="模板消息发送条件"><a href="#模板消息发送条件" class="headerlink" title="模板消息发送条件"></a>模板消息发送条件</h2><p>小程序的模板消息也不是随便发的，需要满足下面任意一条：</p>
+<ol>
+<li><strong>支付</strong>：当用户在小程序内完成过支付行为，可允许开发者向用户在<strong>7天内</strong>推送有限条数的模板消息（<strong>1次支付可下发3条</strong>，多次支付下发条数独立，互相不影响）</li>
+<li><strong>提交表单</strong>：当用户在小程序内发生过提交表单行为且该表单声明为要发模板消息的，开发者需要向用户提供服务时，可允许开发者向用户在<strong>7天内</strong>推送有限条数的模板消息（<strong>1次提交表单可下发1条</strong>，多次提交下发条数独立，相互不影响）</li>
+</ol>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://www.lichenliang.top/xiaochengxu-dili-weizhi-ni-jiexi.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1255,7 +1428,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1277,7 +1450,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">19</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
