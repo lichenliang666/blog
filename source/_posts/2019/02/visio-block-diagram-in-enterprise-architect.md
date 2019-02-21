@@ -1,6 +1,7 @@
 ---
 title: 在 Enterprise Architect 中画 Visio 的基本框图
 date: 2019-02-08
+permalink: visio-block-diagram-in-enterprise-architect
 ---
 
 有的时候我们想画画框图用 Visio 是很方便的。可在 Enterprise Architect（后面简称为 EA ）中用什么图画框图比较好呢。有的说用对象图、流程图都可以。我看了下后感觉里面的图形元素和 Visio 框图中的形状还是差了不少。
