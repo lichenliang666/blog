@@ -51,7 +51,10 @@ TODO
 *   2018-02-01 经过幕布拍照、邮寄资料，这天ICP备案通过了
 *   2018-02-03 更改网站主题为 [Kratos](https://www.vtrois.com/theme-kratos.html "Kratos") v2.5.8
 *   2018-01-12 注册了新的域名 [lichenliang.top](http://www.lichenliang.top/ "李晨亮博客")（在给 lichenliang.ink 续费的时候才想起来这个域名是因为首年便宜才买的，买了之后又备案又搞什么的就忘了这个事😭）
-*   2019-02-15 将 WordPress 中的内容折腾到 Hexo (在 WrodPress 中导出文件，再用 Hexo 的 hexo-migrator-wordpress 插件导入到 Hexo )
-*   2019-02-16 将 WordPress 的站域名从 www.lichenliang.top 改为 blog.lichenliang.top
-*   2019-02-16 www.lichenliang.top 解析到 github 的 pages 服务上
-*   2019-02-17 增加 Valine 评论系统 
+* 2019-02-15 将 WordPress 中的内容折腾到 Hexo (在 WrodPress 中导出文件，再用 Hexo 的 hexo-migrator-wordpress 插件导入到 Hexo )
+* 2019-02-16 将 WordPress 的站域名从 www.lichenliang.top 改为 blog.lichenliang.top
+* 2019-02-16 将 www.lichenliang.top 解析到 github 的 pages 服务上
+* 2019-02-17 增加 Valine 评论系统 
+* 2019-02-23 
+  * 感觉百度不收录，怀疑因为是 github 为外国 IP 的原因。因此将 www.lichenliang.top 的解析从 github 改到阿里云虚拟主机上（老的 WordPress 文件都移到了该主机下的 wp 目录中）
+  * 页脚上增加备案号
