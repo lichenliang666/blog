@@ -1,11 +1,17 @@
 ---
-title: EA中无法删除选择的包
-draft: true
+title: Enterprise Architect 中无法删除选择的包
 date: 2019-02-14 14:39:38
 tags:
+  - Enterprise-Architect
+  - EA
+  - 建模
+categories: 
+  - 建模
+  - 工具
+permalink: enterprise-architect-cannot-delete-selected-package
 ---
 
-EA项目环境说明：EA工程文件是受SVN版本控制的。
+EA项目环境说明：EA工程文件是已受SVN版本控制的。
 
 在 `Project Browser` A包右键依次点击  `Package Control`  -> `Check Out` 后，想删除A包下面的B包。在B包上右键点击，在右键菜单中点击`Delete 'B'`后的提示，如下图：
 
