@@ -1,6 +1,14 @@
 ---
 title: 在 Enterprise Architect 中画 Visio 的基本框图
-date: 2019-02-08
+date: 2019-02-08 12:12:00
+updated: 2019-02-23 17:13:31
+tags:
+  - Enterprise-Architect
+  - EA
+  - 建模
+categories: 
+  - 建模
+  - 工具
 permalink: visio-block-diagram-in-enterprise-architect
 ---
 
