@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://www.lichenliang.top
 root: /
-permalink: :title.html
+permalink: :year/:month/:title.html
 permalink_defaults:
 
 # Directory
