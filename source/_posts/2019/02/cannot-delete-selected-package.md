@@ -15,7 +15,11 @@ EA项目环境说明：EA工程文件是已受SVN版本控制的。
 
 在 `Project Browser` A包右键依次点击  `Package Control`  -> `Check Out` 后，想删除A包下面的B包。在B包上右键点击，在右键菜单中点击`Delete 'B'`后的提示，如下图：
 
-![EA不能删除选择的包](./cannot-delete-selected-package/cannot-delete-selected-package.png)
+{% if 1 == 1 %}
+  {% asset_img cannot-delete-selected-package.png EA不能删除选择的包 %}
+{% else %}
+  ![EA不能删除选择的包](./cannot-delete-selected-package/cannot-delete-selected-package.png)
+{% endif %}
 
 > “基础信息管理” 包被 `Check Out` 了！
 
