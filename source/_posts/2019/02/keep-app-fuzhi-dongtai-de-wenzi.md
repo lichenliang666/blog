@@ -6,7 +6,6 @@ tags:
 categories:
   - 爱好
   - 跑步
-permalink: keep-app-fuzhi-dongtai-de-wenzi
 ---
 
 玩 Keep app 的小伙伴们，都是运动达人！

@@ -8,7 +8,6 @@ categories:
 tags:
   - SpringBoot
   - MyBatis
-permalink: spring-boot-zengjia-mapper-bean-lujing
 ---
 
 # 背景

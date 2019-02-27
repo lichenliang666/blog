@@ -8,7 +8,6 @@ tags:
 categories: 
   - 建模
   - 工具
-permalink: enterprise-architect-cannot-delete-selected-package
 ---
 
 EA项目环境说明：EA工程文件是已受SVN版本控制的。
