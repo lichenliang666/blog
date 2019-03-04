@@ -3,6 +3,7 @@ title: 高校跑第一季 No.2 哈尔滨工程大学
 tags:
   - 跑步
   - 高校跑
+  - 运动
 categories:
   - 爱好
   - 跑步
