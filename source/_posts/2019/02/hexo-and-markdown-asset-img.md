@@ -28,3 +28,12 @@ tags:
 ```
 
 因为 Markdown 是不支持`{/% %}`这种标签的解析，所以在纯 Markdown 解析环境中会把上面代码中那些 Hexo 中有效的标签都忽略掉。那么就只剩下原生的 Markdown 插入图片语法了。
+
+空模板
+```
+{% if 1 == 1 %} 
+  {% asset_img xx.png title %}
+{% else %}
+  ![](./xx.png 'title')
+{% endif %}
+```
