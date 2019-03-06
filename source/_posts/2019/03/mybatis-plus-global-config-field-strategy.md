@@ -25,10 +25,6 @@ mybatis-plus:
     field-strategy:
 ```
 
-mybatis-plus-global-config-field-strategy
-
-
-
 ## FieldStrategy
 
 com.baomidou.mybatisplus.enums.FieldStrategy
