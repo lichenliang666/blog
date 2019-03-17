@@ -4,6 +4,7 @@ date: 2019-02-18 21:12:18
 tags: 
   - KeepApp
 categories:
+  - 生活
   - 爱好
   - 跑步
 ---
