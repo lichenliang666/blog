@@ -21,3 +21,36 @@ date: 2019-03-24 17:00:00
 早上六点多点到达第9门附近开始今天的高校跑。
 
 
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_071954.jpg '')
+
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_064959.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_070910.jpg '')
+
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_071944.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_075355.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_064801.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_065425.jpg '')
+   
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_065113.jpg '')
+   
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_070615.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_075526.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_072621.jpg '')
+ 
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_072453.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/20190324174005.jpg '')
+
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_070808.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_094743.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_094414.jpg '')
+  
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0324/IMG_20190324_082240.jpg '')
