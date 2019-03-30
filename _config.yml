@@ -78,6 +78,15 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: https://github.com/lichenliang666/blog.git
-  branch: gh-pages
+  # type: git
+  # repo: https://github.com/lichenliang666/blog.git
+  # branch: gh-pages
+  type: ftpsync
+  host: <host>
+  user: <user>
+  pass: <password>
+  remote: /htdocs
+  port: 21
+  ignore: 
+  connections: 3
+  verbose: true
