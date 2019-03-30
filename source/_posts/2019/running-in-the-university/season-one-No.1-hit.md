@@ -10,6 +10,7 @@ categories:
   - 爱好
   - 跑步
 date: 2019-02-24 18:00:00
+updated: 2019-03-30 12:58:00
 ---
 
 时间：2019年2月24日 星期日
@@ -18,34 +19,18 @@ date: 2019-02-24 18:00:00
 
 这是2019高校跑的第一站哈尔滨工业大学。
 
-{% if 1 == 1 %} 
-  {% asset_img hit-01.jpg 哈尔滨工业大学（图片来自网络） %}
-{% else %}
-  ![](./season-one-No.1-hit/hit-01.jpg '哈尔滨工业大学（图片来自网络）')
-{% endif %}
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0224/running-in-the-universityhit-01.jpg '哈尔滨工业大学（图片来自网络）')
 
 下午3点来到工大体育场，门还是锁着。我一直不知道这地方平时开不开放，反正我来过几次都是锁着的。我一直想在这中大场地里面跑跑，到现在还没找到能进去的高校场地。
 
-{% if 1 == 1 %} 
-  {% asset_img IMG_20190224_162013.jpg 哈工大体育场外墙 %}
-{% else %}
-  ![](./season-one-No.1-hit/IMG_20190224_162013.jpg '哈工大体育场外墙')
-{% endif %}
-
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0224/running-in-the-universityIMG_20190224_162013.jpg '哈工大体育场外墙')
 
 足球场也有跑道，之前也在这跑过，就在这跑跑吧。
 
-{% if 1 == 1 %} 
-  {% asset_img IMG_20190224_155530.jpg 哈工大足球场 %}
-{% else %}
-  ![](./season-one-No.1-hit/IMG_20190224_155530.jpg '哈工大足球场')
-{% endif %}
-
-
-
+![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0224/running-in-the-universityIMG_20190224_155530.jpg '哈工大足球场')
 
 # 小遗憾
 
 - 下午4点时天就有些冷了
 - 还起了风，我穿的太薄，感觉有些失温
-- 就太体育场里面跑，没有把学校整个浏览一遍
+- 就在体育场里面跑，没有把学校整个浏览一遍
