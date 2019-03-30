@@ -1,8 +1,10 @@
 ---
 title: Hexo 与 Markdown 兼容的图片引用插入方法
 date: 2019-03-04 09:43:00
+updated: 2019-03-30 12:35:00
 tags: 
  - Hexo
+ - Markdown
 ---
 
 先来引用一段 Hexo 中文文档中的一段话。
@@ -37,3 +39,15 @@ tags:
   ![](./xx.png 'title')
 {% endif %}
 ```
+
+# 终极大招
+
+如果这样感觉还是很费劲，那么还有终极大招！！！
+
+那就是用图床吧，使用http绝对路径为图片的地址。
+
+推荐大家使用七牛的对象存储服务（[七牛官网](https://portal.qiniu.com/signup?code=3lkz9nbfo4guq)），本站使用的就是这个。
+
+![](https://mars-assets.qnssl.com/qiniulog/img-slogan-blue-en.png '七牛云存储')
+
+
