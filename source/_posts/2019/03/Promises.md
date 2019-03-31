@@ -52,8 +52,10 @@ promise 必须是三种状态中一种：请求态（pending），完成态（fu
 > 这句话还不能理解透是什么意思
 
 ### `then` 方法 
+
 promise 必须提供一个 `then` 方法来访问它当前/最终的值或 reason。
 promise's `then` 方法有两个参数：
+
 ```js
 promise.then(onFulfilled, onRejected)
 ```
@@ -66,7 +68,7 @@ promise.then(onFulfilled, onRejected)
     1. 它绝对不能在 `promise` 为 fulfilled 之前调用。
     1. 它不能被调用超过一次。
 3. 如果 `onRejected` 是函数,
-    1. 它必须在 `promise` 为 rejected 后调用，并把 `promise` 的 reason 作为它的第一个参数。 
+    1. 它必须在 `promise` 为 rejected 后调用，并把 `promise` 的 reason 作为它的第一个参数。
     1. 它绝对不能在 `promise` 为 rejected 之前调用。
     1. 它不能被调用超过一次。
 4. `onFulfilled` or `onRejected` must not be called until the [execution context](https://es5.github.io/#x10.3) stack contains only platform code. [[3.1](#notes)].
@@ -75,9 +77,11 @@ promise.then(onFulfilled, onRejected)
     1. 当 promise 成功执行时，所有 onFulfilled 需按照其注册顺序依次回调
     1. 当 promise 被拒绝执行时，所有的 onRejected 需按照其注册顺序依次回调
 7. `then` 必须返回一个 `promise` 对象 [[3.3](#notes)]。
+
     ``` js
     promise2 = promise1.then(onFulfilled, onRejected);
     ```
+
     1. 如果 `onFulfilled` 或 `onRejected` 返回一个值 `x`，run the Promise Resolution Procedure `[[Resolve]](promise2, x)`.
     1. 如果 `onFulfilled` 或 `onRejected` 抛出异常 `e`, `promise2` 必须拒绝执行，并返回 reason `e` 
     1. 如果 `onFulfilled` 不是一个函数并且 `promise1` 是 fulfilled， `promise2` 必须为 fulfilled 并且返回与 `promise1` 相同的 value
@@ -126,9 +130,8 @@ promise.then(onFulfilled, onRejected)
 
 1. Implementations should *not* set arbitrary limits on the depth of thenable chains, and assume that beyond that arbitrary limit the recursion will be infinite. Only true cycles should lead to a `TypeError`; if an infinite chain of distinct thenables is encountered, recursing forever is the correct behavior.
 
-
 # 参考资料
 
-> https://promisesaplus.com/
-> http://www.ituring.com.cn/article/66566
-> https://segmentfault.com/a/1190000015914967
+> [https://promisesaplus.com/](https://promisesaplus.com/)
+> [http://www.ituring.com.cn/article/66566](http://www.ituring.com.cn/article/66566)
+> [https://segmentfault.com/a/1190000015914967](https://segmentfault.com/a/1190000015914967)
