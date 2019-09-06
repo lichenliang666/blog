@@ -1,0 +1,381 @@
+---
+title: 《Python编程：从入门到实践》 第6章 字典
+tags:
+  - Python
+  - 读书笔记
+categories:
+  - Python
+  - 读书笔记
+date: 2019-09-04 22:00:00
+updated: 2019-09-04 22:00:00
+---
+
+# 第6章 字典
+
+字典可储存的信息几乎不受限制。这章学习遍历字典中的数据，还有存储字典的列表、储存列表的字典和储存字典的字典。
+
+## 6.1 一个简单的字典
+
+```python
+alien_0 = {'color': 'green', 'points': 5}
+
+print(alien_0['color'])
+print(alien_0['points'])
+
+green
+5
+```
+
+## 6.2 使用字典
+
+在 Python 中，**字典**是一系列**键—值对**。每个**键**都与一个值相关联，你可以使用键来访问与之相关联的值。
+
+### 6.2.1 访问字典中的值
+
+```python
+alien_0 = {'color': 'green', 'points': 5}
+
+new_points = alien_0['points']
+print("You just earned " + str(new_points) + " points!")
+You just earned 5 points!
+```
+
+### 6.2.2 添加键—值对
+
+字典是一种动态结构，可随时在其中添加键—值对。要添加键—值对，可依次指定字典名、用方括号括起的键和相关联的值。
+
+```python
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+{'color': 'green', 'points': 5}
+alien_0['x_position'] = 0
+alien_0['y_position'] = 25
+print(alien_0)
+{'color': 'green', 'points': 5, 'y_position': 25, 'x_position': 0}
+```
+
+Python不关心键—值对的添加顺序，而只关心键和值之间的关联关系。
+
+### 6.2.3 先创建个空字典
+
+```python
+alien_0 = {}
+
+alien_0['color'] = 'green'
+alien_0['points'] = 5
+
+print(alien_0)
+```
+
+### 6.2.4 修改字典中的值
+
+```python
+alien_0 = {'x_position': 0, 'y_position': 25, 'speed': 'medium'}
+print("Original x-position: " + str(alien_0['x_position']))
+Original x-position: 0
+
+# 向右移动外星人
+# 据外星人当前速度决定将其移动多远
+if alien_0['speed'] == 'slow':
+    x_increment = 1
+elif alien_0['speed'] == 'medium':
+    x_increment = 2
+else:
+    # 这个外星人的速度一定很快
+    x_increment = 3
+
+# 新位置等于老位置加上增量
+alien_0['x_position'] = alien_0['x_position'] + x_increment
+
+print("New x-position: " + str(alien_0['x_position']))
+New x-position: 2
+```
+
+### 6.2.5 删除键—值对
+
+```python
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+
+del alien_0['points']
+print(alien_0)
+
+{'color': 'green', 'points': 5}
+{'color': 'green'}
+```
+
+### 6.2.6 由类似对象组成的字典
+
+```python
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+print("Sarah's favorite language is " +
+    favorite_languages['sarah'].title() +
+    ".")
+```
+
+## 6.3 遍历字典
+
+Python 有多种遍历字典的方式：可遍历字典的所有键—值对、键或值。
+
+### 6.3.1 遍历所有的键-值对
+
+```python
+user_0 = {
+    'username': 'efermi',
+    'first': 'enrico',
+    'last': 'fermi',
+    }
+
+for key, value in user_0.items():
+    print("\nKey: " + key)
+    print("Value: " + value)
+```
+
+
+
+使用建档的变量名也可以使用更适合的自定义变量名
+
+```python
+for k, v in user_0.items()
+```
+
+
+
+### 6.3.2 遍历字典中的所有键
+
+字典的 keys() 方法，可返回字典中的所有key。
+
+```python
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+for name in favorite_languages.keys():
+    print(name.title())
+```
+
+在 for 循环中，只写了1个变量不调用 keys() 也是一样的。
+
+```python
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+friends = ['phil', 'sarah']
+for name in favorite_languages.keys():
+    print(name.title())
+
+    if name in friends:
+        print("  Hi " + name.title() +
+            ", I see your favorite language is " +
+            favorite_languages[name].title() + "!")
+```
+
+
+
+### 6.3.3 按顺序遍历字典中的所有键
+
+使用 sorted() 可对列表中的键进行排序。
+
+```python
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+for name in sorted(favorite_languages.keys()):
+    print(name.title() + ", thank you for taking the poll.")
+
+```
+
+### 6.3.4 遍历字典中的所有值
+
+values() 可获得字典中的所有值
+
+```python
+favorite_languages = {
+    'jen': 'python',
+    'sarah': 'c',
+    'edward': 'ruby',
+    'phil': 'python',
+    }
+
+print("The following languages have been mentioned:")
+for language in favorite_languages.values():
+    print(language.title())
+```
+
+通过对包含重复元素的列表调用`set()`，可让Python找出列表中独一无二的元素，并使用这些元素来创建一个集合。
+
+```python
+for language in set(favorite_languages.values()):
+      print(language.title())
+```
+
+## 6.4 嵌套
+
+将一系列字典存储在列表中，或将列表作为值存储在字典中，这称为**嵌套**。
+
+### 6.4.1 字典列表
+
+把3个字典放到1个列表中：
+
+```python
+alien_0 = {'color': 'green', 'points': 5}
+alien_1 = {'color': 'yellow', 'points': 10}
+alien_2 = {'color': 'red', 'points': 15}
+aliens = [alien_0, alien_1, alien_2]
+# 打印例表中的每个字典
+for alien in aliens:
+    print(alien)
+```
+
+我们使用 `range()` 生成了30个外星人：
+
+```python
+# 创建一个用于存储外星人的空列表
+aliens = []
+
+# 创建30个绿色的外星人
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+# 显示前五个外星人
+for alien in aliens[:5]:
+    print(alien)
+print("...")
+
+# 显示创建了多少个外星人
+print("Total number of aliens: " + str(len(aliens)))
+```
+
+给某些改变颜色：
+
+```python
+# 创建一个用于存储外星人的空列表
+aliens = []
+
+# 创建30个绿色的外星人
+for alien_number in range (0,30):
+    new_alien = {'color': 'green', 'points': 5, 'speed': 'slow'}
+    aliens.append(new_alien)
+
+for alien in aliens[0:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+
+# 显示前五个外星人
+for alien in aliens[0:5]:
+    print(alien)
+print("...")
+```
+
+用 elif 又换了一些：
+
+```python
+for alien in aliens[0:3]:
+    if alien['color'] == 'green':
+        alien['color'] = 'yellow'
+        alien['speed'] = 'medium'
+        alien['points'] = 10
+    elif alien['color'] == 'yellow':
+        alien['color'] = 'red'
+        alien['speed'] = 'fast'
+        alien['points'] = 15
+```
+
+### 6.4.2 在字典中储存列表
+
+在披散里面放入配料的列表：
+
+```python
+# 存储所点比萨的信息
+pizza = {
+    'crust': 'thick',
+    'toppings': ['mushrooms', 'extra cheese'],
+    }
+
+# 概述所点的比萨
+print("You ordered a " + pizza['crust'] + "-crust pizza " +
+    "with the following toppings:")
+
+for topping in pizza['toppings']:
+    print("\t" + topping)
+```
+
+字典中放列表：
+
+```python
+favorite_languages = {
+    'jen': ['python', 'ruby'],
+    'sarah': ['c'],
+    'edward': ['ruby', 'go'],
+    'phil': ['python', 'haskell'],
+    }
+
+for name, languages in favorite_languages.items():
+    print("\n" + name.title() + "'s favorite languages are:")
+    for language in languages:
+        print("\t" + language.title())
+```
+
+### 6.4.3 在字典中储存字典
+
+```python
+users = {
+    'aeinstein': {
+        'first': 'albert',
+        'last': 'einstein',
+        'location': 'princeton',
+        },
+
+    'mcurie': {
+        'first': 'marie',
+        'last': 'curie',
+        'location': 'paris',
+        },
+
+    }
+
+for username, user_info in users.items():
+    print("\nUsername: " + username)
+    full_name = user_info['first'] + " " + user_info['last']
+    location = user_info['location']
+
+    print("\tFull name: " + full_name.title())
+    print("\tLocation: " + location.title())
+
+
+```
+
+##  6.5 小结
+
+学习内容，如下：
+
+- 如何定义字典结构；
+- 如何在字典中存储信息；
+- 访问修改字典中的元素；
+- 如何遍历字典所有信息；
+- 如何遍历字典里所有键；
+- 如何遍历字典里所有值；
+- 如何在列表中嵌套字典；
+- 如何在字典中嵌套列表；
+- 如果在字典中嵌套字典。
+
