@@ -1,5 +1,5 @@
 ---
-title: 《Python编程：从入门到实践》 第5章 if 语句
+title: 《Python编程：从入门到实践》 第 5 章 if 语句
 tags:
   - Python
   - 读书笔记
@@ -8,9 +8,10 @@ categories:
   - 读书笔记
 date: 2019-09-04 20:00:00
 updated: 2019-09-04 20:00:00
+permalink: python-study-notes/python-crash-course/chapter-5-if-statements
 ---
 
-# 第5章 if 语句
+# 第 5 章 if 语句
 
 if 语句可让你检查程序的状态，不同的状态执行不同的操作。这章学习 if 语句的简单和复杂使用。还将学习把 if 语句用到列表的 for 循环的操作中。
 

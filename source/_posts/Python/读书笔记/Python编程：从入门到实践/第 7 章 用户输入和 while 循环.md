@@ -1,16 +1,15 @@
 ---
-title: 《Python编程：从入门到实践》 第7章 用户输入和 while 循环
+title: 《Python编程：从入门到实践》 第 7 章 用户输入和 while 循环
 tags:
   - Python
   - 读书笔记
 categories:
   - Python
   - 读书笔记
-date: 2019-09-05 20:00:00
-updated: 2019-09-05 20:00:00
+permalink: python-study-notes/python-crash-course/chapter-7-user-input-and-while-loops
 ---
 
-# 第7章 用户输入和 `while` 循环
+# 第 7 章 用户输入和 `while` 循环
 
 本章将学习如何接受用户输入，以及如何让程序不断的运行。
 
@@ -24,6 +23,8 @@ print(message)
 ```
 
 函数 `input()` 接受一个参数：即要向用户显示的**提示**或说明，让用户知道该如何做。
+
+<!-- more -->
 
 ### 7.1.1 编写清晰的程序
 
