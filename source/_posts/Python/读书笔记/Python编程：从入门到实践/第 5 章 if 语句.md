@@ -320,3 +320,6 @@ print("\nFinished making your pizza!")
 - 如何写 if 、if-else、if-elif-else 结构；
 - 在 for 中使用 if；
 - 代码格式建议。
+
+---
+[完整的学习笔记列表](readme.html#列表)
