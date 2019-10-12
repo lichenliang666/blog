@@ -1,5 +1,5 @@
 ---
-title: 在 Python 3.74 下安装 Scrapy 
+title: 在 Python 3.7.4 下安装 Scrapy 
 tags:
   - Python
   - Scrapy
