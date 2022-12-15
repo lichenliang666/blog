@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://www.lichenliang.top
+url: http://www.willgoon.top
 root: /
 permalink: :title.html
 permalink_defaults:
@@ -93,7 +93,7 @@ qiniu:
   # // 上传的资源子目录前缀.如设置，需与urlPrefix同步
   dirPrefix:
   # //外链前缀
-  urlPrefix: http://www.lichenliang.top/
+  urlPrefix: http://www.willgoon.top/
   # //使用默认配置即可
   up_host: http://upload.qiniu.com
   # //本地目录
