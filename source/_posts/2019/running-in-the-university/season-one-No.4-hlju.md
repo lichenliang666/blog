@@ -26,18 +26,18 @@ date: 2019-07-07 16:55:00
 
 这是我跑的第四个一表高校，也是比较受挫的一次。前三个都是把场上所有人都超过，并且再靠走一波人。可这次场上的跑着明显比前几个高校的节奏好，跑姿流畅，也可能是二、三月份的时候还没高手还没出来呢。。。
 
-![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0707/201907071732011.jpg '')
+![](http://static.willgoon.top/image/blog/2019/running-in-the-university/0707/201907071732011.jpg '')
 
-![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0707/201907071732012.jpg '')
+![](http://static.willgoon.top/image/blog/2019/running-in-the-university/0707/201907071732012.jpg '')
 
-![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0707/201907071732013.jpg '')
+![](http://static.willgoon.top/image/blog/2019/running-in-the-university/0707/201907071732013.jpg '')
 
-![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0707/201907071732014.jpg '')
+![](http://static.willgoon.top/image/blog/2019/running-in-the-university/0707/201907071732014.jpg '')
 
-![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0707/201907071732015.jpg '')
+![](http://static.willgoon.top/image/blog/2019/running-in-the-university/0707/201907071732015.jpg '')
 
-![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0707/201907071732016.jpg '')
+![](http://static.willgoon.top/image/blog/2019/running-in-the-university/0707/201907071732016.jpg '')
 
-![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0707/20190707173200.jpg '')
+![](http://static.willgoon.top/image/blog/2019/running-in-the-university/0707/20190707173200.jpg '')
 
-![](http://static.lichenliang.top/image/blog/2019/running-in-the-university/0707/201907071732001.jpg '')
+![](http://static.willgoon.top/image/blog/2019/running-in-the-university/0707/201907071732001.jpg '')

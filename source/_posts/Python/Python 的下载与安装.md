@@ -30,19 +30,19 @@ updated: 2019-09-01
 
 1. 运行下载的 exe 文件，第一个界面是询问安装到什么地方，这里我选中 Customize installation ，安装到我自定义的路径中。建议把下面两个复选框都勾上，Install launcher for all users (recommended) 为所有用户安装，Add Python 3.7 to PATH （将 Python 添加到系统的 PATH 路径中，这样以后在任何路径先都可以执行 python 了）；
 
-![](http://static.lichenliang.top/image/blog/python/install/Python-for-Windows-install-1.png)
+![](http://static.willgoon.top/image/blog/python/install/Python-for-Windows-install-1.png)
 
 2. 这个界面全部都勾选就可以； 
 
-![](http://static.lichenliang.top/image/blog/python/install/Python-for-Windows-install-2.png)
+![](http://static.willgoon.top/image/blog/python/install/Python-for-Windows-install-2.png)
 
 3. 这个也没哟说明说的按下面选即可，除非对调试有特殊的要求；
 
-![](http://static.lichenliang.top/image/blog/python/install/Python-for-Windows-install-3.png)
+![](http://static.willgoon.top/image/blog/python/install/Python-for-Windows-install-3.png)
 
 4. 在这个界面中推荐执行下“Disable path length limit”，这个是用来解除系统对 PATH 最长 260 字符的限制。
 
-![](http://static.lichenliang.top/image/blog/python/install/Python-for-Windows-install-4.png)
+![](http://static.willgoon.top/image/blog/python/install/Python-for-Windows-install-4.png)
 
 5. 打开命令行窗口，输入 `python` 后回车，出现下面信息则安装成功。 
 
