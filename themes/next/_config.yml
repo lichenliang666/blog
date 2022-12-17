@@ -101,7 +101,7 @@ menu:
   tags: /tags/ || tags 
   archives: /archives/ || archive
   about: /about || user
-  留言: /message || envelope
+  # 留言: /message || envelope
   #home: / || fa fa-home
   #about: /about/ || fa fa-user
   #tags: /tags/ || fa fa-tags
